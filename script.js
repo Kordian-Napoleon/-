@@ -172,4 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Nasłuchiwanie kliknięcia na elementy
     encryptSpan.addEventListener('click', () => selectOption('encrypt'));
     decryptSpan.addEventListener('click', () => selectOption('decrypt'));
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            startButton.click(); // Kliknięcie przycisku start, gdy Enter jest naciśnięty
+        }
+    });
 });
