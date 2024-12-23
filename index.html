@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card" id="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <div id="output"></div>
+            </div>
+            <div class="card-back">
+                <div class="input-container">
+                    <p><span id="encrypt" class="selected">szyfruj</span> ~ <span id="decrypt">deszyfruj</span></p>
+                    <input type="text" id="informacja" placeholder="Wpisz informację...">
+                    <textarea id="tablica" name="tablica" rows="5" placeholder="Tablica"></textarea>
+                    <input type="text" id="klucz" placeholder="Klucz" >
+                    <button id="startButton">START</button>
+                    <div id="table">#</div>
+                    <div id="default">O</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
